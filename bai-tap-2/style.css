@@ -170,7 +170,8 @@ body{
     letter-spacing: 0.05em;          
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 80%);
 }
-.aside1text p{
+
+.aside1text p,#btn_shadow{
     font-family: 'Caudex', serif;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
