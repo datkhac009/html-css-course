@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.width {
+    width: 100%;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+}
+
+.header {
+    background: #020015;
+}
+
+
+/* Phần sidebar */
+
+.header-side-bar {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 600px 0px;
+}
+
+.list-toggle {
+    background: #2B61D1;
+    padding: 40px 21px 40px 10px;
+    border-radius: 0px 60px 60px 0px;
+    font-size: 2em;
+}
+
+.toggle1,
+.toggle2 {
+    padding: 0 0 25px 0;
+    color: white;
+}
+
+.header-main-menu-toggle {
+    opacity: 0;
+}
+
+
+/* Phần header main */
+
+.header-main-menu {
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px;
+}
+
+
+/* Phần header main Đầu */
+
+.header-main-menu-logo-img h3 {
+    padding: 16px 0px 0px 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.header-main-menu-nav {
+    padding: 16px 0px 0px 0px;
+}
+
+.header-main-menu-nav-item li {
+    padding: 0 37px 0 0px;
+    list-style: none;
+}
+
+.header-main-menu-nav-item a {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header-main-menu-btn {
+    padding: 16px 152px 0px 0px;
+}
+
+.header-main-menu-btn a {
+    background: #2B61D1;
+    padding: 16px 57px 15px 62px;
+    border-radius: 60px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+/***************Header main giữa*************/
+
+.header-main-section1 {
+    padding: 175px 0 0 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main-section1-title {
+    padding: 0px 0px 0px 114px;
+}
+
+.header-main-section1-btn {
+    padding: 0 200px 0px 0px;
+}
+
+.header-main-section1-title h3,
+p {
+    padding-bottom: 30px;
+}
+
+.header-main-section1-title h3 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.header-main-section1-title p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-main-section1-btn a {
+    border: 2px solid #2B61D1;
+    padding: 14px 67px 14px 67px;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.header-main-section1-img img {
+    padding: 0px 300px 0px 0px;
+}
+
+
+/********* Header main cuối *********/
+
+.header-main-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 191px 0 92px 0;
+}
+
+.header-main-section2-img {
+    padding: 0 0 0 114px;
+}
+
+.header-main-section2-title {
+    padding: 0 330px 116px 0px;
+}
+
+.header-main-section2-title h3,
+p {
+    padding-bottom: 30px;
+}
+
+.header-main-section2-title h3 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.header-main-section2-title p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-main-section2-btn a {
+    border: 2px solid #2B61D1;
+    padding: 14px 67px 14px 67px;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.header-main-section2-btn {
+    padding: 0 200px 0px 0px;
+}
+
+.main-section-items1,
+.main-section-items2,
+.main-section-items3 {
+    background: antiquewhite;
+    padding: 26px 95px 26px 95px;
+    border-radius: 30px;
+}
+
+.main-section-items1 p,
+.main-section-items2 p,
+.main-section-items3 p {
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Main sectuib chinh */
+
+.main {
+    padding: 0 0 90px 0px;
+}
+
+.main-section-title {
+    text-align: center;
+}
+
+.main-section-items {
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .header-main-menu-toggle {
+        opacity: 1;
+    }
+    .fa-align-justify:before {
+        content: "\f039";
+        font-size: 22px;
+    }
+    .header {
+        /* position: relative; */
+    }
+    .header-side-bar {
+        display: none;
+    }
+    .header-main-menu-btn {
+        padding: 15px 0px 0px 0px;
+    }
+    .header-main-menu-btn i {
+        color: white;
+    }
+    .header-main-menu-btn a {
+        display: none;
+    }
+    .header-main-menu-nav {
+        display: none;
+    }
+    .header-main-menu-logo-img {
+        padding: 0px 162px 0px 30px;
+    }
+    .header-main-menu-logo-img h3 {
+        font-size: 24px;
+        color: white;
+    }
+    /*********** Header main giữa********** */
+    .header-main-section1 {
+        width: 475px;
+        padding-top: 119px;
+    }
+    .header-main-section1-img {
+        position: absolute;
+        z-index: 0;
+        left: 100px;
+    }
+    .header-main-section1-title {
+        text-align: center;
+        padding: 0px 0px 0px 70px;
+        z-index: 1;
+    }
+    .header-main-section1-img img {
+        width: 275px;
+        height: 287px;
+        padding: 0;
+        opacity: 0.5;
+    }
+    .header-main-section1-title h3 {
+        font-size: 36px;
+    }
+    .header-main-section1-title p {
+        font-size: 18px;
+    }
+    .header-main-section1-btn {
+        padding: 0;
+    }
+    .header-main-section1-btn a {
+        font-size: 24px;
+        padding: 11px 35px 11px 35px;
+    }
+    /********* Header main footer******** */
+    .header-main-section2 {
+        width: 475px;
+        padding-top: 194px;
+    }
+    .header-main-section2-img {
+        position: absolute;
+        z-index: 0;
+    }
+    .header-main-section2-title {
+        text-align: center;
+        padding: 0px 0px 0px 90px;
+        z-index: 1;
+    }
+    .header-main-section2-img img {
+        width: 275px;
+        height: 287px;
+        padding: 0;
+        opacity: 0.5;
+    }
+    .header-main-section2-title h3 {
+        font-size: 36px;
+        width: 300px;
+    }
+    .header-main-section2-title p {
+        font-size: 18px;
+    }
+    .header-main-section2-btn {
+        padding: 0;
+    }
+    .header-main-section2-btn a {
+        font-size: 24px;
+        padding: 11px 35px 11px 35px;
+    }
+}
