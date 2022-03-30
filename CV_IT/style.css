@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(5, 162, 128);
+    background: linear-gradient(90deg, rgba(5, 162, 128, 1) 2%, rgba(64, 177, 165, 1) 14%, rgba(138, 1, 228, 0.4822303921568627) 34%, rgba(0, 212, 255, 1) 56%, rgba(0, 5, 255, 0.5158438375350141) 85%);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    background: rgb(23, 1, 228);
+    background: linear-gradient(90deg, rgba(23, 1, 228, 0.2777485994397759) 47%, rgba(0, 52, 255, 0.3757878151260504) 52%);
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.header__nav--items {
+    display: flex;
+}
+
+.header__nav--items li {
+    margin: 0 40px;
+    display: inline-block;
+}
+
+
+/* Hover thanh Header__nav */
+
+.header__nav--items li a {
+    position: relative;
+    font-size: 20px;
+    color: #3c2020;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.header__nav--items li a::after {
+    content: "";
+    background-color: #ff3c78;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header__nav--items li a:hover {
+    color: #edabbf;
+    transition: 0.3s;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.header__nav--items li a:hover::after {
+    width: 100%;
+}
+
+
+/* Hiệu ứng BTN Header__nav */
+
+.header__btn a {
+    position: relative;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header__btn a::after {
+    content: "";
+    background-color: #ff3c78;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.header__btn a:hover {
+    color: #ffff;
+    transition: 0.3s;
+}
+
+.header__btn a:hover {
+    transition-delay: 0.3s;
+    text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
+.header__btn a:hover::after {
+    width: 100%;
+}
