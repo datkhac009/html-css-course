@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -5,9 +6,13 @@
 }
 
 body {
-    background: rgb(5, 162, 128);
-    background: linear-gradient(90deg, rgba(5, 162, 128, 1) 2%, rgba(64, 177, 165, 1) 14%, rgba(138, 1, 228, 0.4822303921568627) 34%, rgba(0, 212, 255, 1) 56%, rgba(0, 5, 255, 0.5158438375350141) 85%);
+    background: #030E21;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wapper {
+    position: relative;
 }
 
 a {
@@ -18,13 +23,67 @@ li {
     list-style: none;
 }
 
+.paddingtop-60px {
+    padding-top: 60px;
+}
+
+.paddingtop-200px {
+    padding-top: 200px;
+}
+
+.paddingboottom-100px {
+    padding-bottom: 100px;
+}
+
+.paddingleft-15px {
+    padding-left: 15px;
+}
+
+.marginleft-33px {
+    margin-left: 33px;
+}
+
+.marginbottom-50px {
+    margin-bottom: 50px;
+}
+
+
+/* Background--position */
+
+.background--top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.background--main {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    z-index: -1;
+}
+
+.background--main2 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 36%;
+}
+
+.background--bottom {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 10%;
+}
+
 
 /* Header */
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
@@ -113,5 +172,255 @@ li {
 }
 
 .header__btn a:hover::after {
+    width: 100%;
+}
+
+
+/* Header__hero */
+
+.header__hero {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.header__hero--title h3 {
+    font-weight: 600;
+    font-size: 47px;
+    color: #868490;
+}
+
+.header__hero--title h2 {
+    font-weight: 600;
+    font-size: 80px;
+    color: #FFFFFF;
+}
+
+.header__hero--title p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #868490;
+    line-height: 1.8;
+}
+
+.header__hero--title a {
+    display: inline-block;
+    margin-top: 55px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F8E7A1;
+    position: relative;
+}
+
+.header__hero--title a::after {
+    content: "";
+    background-color: #bde0d6;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.header__hero--title a:hover {
+    color: #edabbf;
+    transition: 0.3s;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.header__hero--title a:hover:after {
+    width: 100%;
+}
+
+.header__hero--avarta img {
+    position: absolute;
+    left: 31%;
+    z-index: -1;
+}
+
+.header__hero--experience p {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: right;
+    color: #868490;
+}
+
+.header__hero--experience h3 {
+    font-weight: 600;
+    font-size: 72px;
+    color: #FFFFFF;
+    text-align: end;
+}
+
+
+/* header__brand */
+
+.header__brand {
+    display: flex;
+    margin-top: 111px;
+    background: rgba(9, 20, 39, 0.6);
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+    padding: 60px 200px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* main__ awesome */
+
+.main__awesome {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 10%;
+    align-items: center;
+}
+
+.main__awesome--title h3 {
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 93px;
+    color: #FFFFFF;
+}
+
+.main__awesome--title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #868490;
+}
+
+.main__awesome--project1,
+.main__awesome--project2,
+.main__awesome--project3 {
+    display: flex;
+    background: rgba(9, 20, 39, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-sizing: border-box;
+    backdrop-filter: blur(9px);
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 28px;
+}
+
+.main__awesomt--titleproject h4 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.main__awesomt--titleproject p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #868490;
+}
+
+
+/* main__ourportofolio */
+
+.main__ourportofolio {
+    margin-top: 180px;
+    background: rgba(9, 20, 39, 0.6);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.main__ourportofolio__project {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 60px;
+}
+
+.main__ourportofolio__project h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.main__ourportofolio__project p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #868490;
+}
+
+
+/* main__aboutme */
+
+.main__aboutme {
+    padding-top: 151px;
+}
+
+.main__aboutme--content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 22%;
+    padding-left: 15%;
+}
+
+.main__aboutme--title h4 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 66px;
+    color: #FFFFFF;
+}
+
+.main__aboutme--title p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding-top: 40px;
+}
+
+#Businessman {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #868490;
+}
+
+.main__aboutme--title a {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F8E7A1;
+    position: relative;
+    padding-top: 80px;
+}
+
+.main__aboutme--title a::after {
+    content: "";
+    background-color: #ff3c78;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.main__aboutme--title a:hover {
+    color: #edabbf;
+    transition: 0.3s;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.main__aboutme--title a:hover:after {
     width: 100%;
 }
