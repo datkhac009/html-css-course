@@ -87,11 +87,13 @@ li {
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
-    background: rgb(23, 1, 228);
     background: linear-gradient(90deg, rgba(23, 1, 228, 0.2777485994397759) 47%, rgba(0, 52, 255, 0.3757878151260504) 52%);
     border: none;
     border-radius: 40px;
     padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header__nav--items {
@@ -210,8 +212,11 @@ li {
     display: inline-block;
     margin-top: 55px;
     font-weight: 400;
-    font-size: 20px;
-    color: #F8E7A1;
+    font-size: 3rem;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     position: relative;
 }
 
@@ -228,12 +233,14 @@ li {
 
 .header__hero--title a:hover {
     color: #edabbf;
-    transition: 0.3s;
+    transition: 0.5s;
+    transition-delay: 0.3s;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .header__hero--title a:hover:after {
     width: 100%;
+    transition: 0.7s;
 }
 
 .header__hero--avarta img {
@@ -288,6 +295,8 @@ li {
     font-size: 62px;
     line-height: 93px;
     color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .main__awesome--title p {
@@ -336,6 +345,16 @@ li {
     margin-left: 10%;
 }
 
+.main__ourportofolio h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 93px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
 .main__ourportofolio__project {
     display: flex;
     justify-content: space-between;
@@ -368,8 +387,8 @@ li {
 .main__aboutme--content {
     display: flex;
     justify-content: space-between;
-    padding-right: 22%;
-    padding-left: 15%;
+    padding-right: 16%;
+    padding-left: 16%;
 }
 
 .main__aboutme--title h4 {
@@ -377,6 +396,7 @@ li {
     font-size: 48px;
     line-height: 66px;
     color: #FFFFFF;
+    letter-spacing: 2px;
 }
 
 .main__aboutme--title p {
@@ -396,12 +416,14 @@ li {
 
 .main__aboutme--title a {
     display: inline-block;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
-    color: #F8E7A1;
+    margin-top: 55px;
+    font-weight: 400;
+    font-size: 3rem;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     position: relative;
-    padding-top: 80px;
 }
 
 .main__aboutme--title a::after {
@@ -412,15 +434,46 @@ li {
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .main__aboutme--title a:hover {
     color: #edabbf;
-    transition: 0.3s;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .main__aboutme--title a:hover:after {
     width: 100%;
+    transition: 0.7s;
+}
+
+.footer {
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    z-index: -1;
+    background: #091427;
+    padding: 40px;
+    padding-left: 14%;
+}
+
+.footer h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.footer__info {
+    margin-top: 25px;
+}
+
+.footer__info i {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: 30px;
 }
