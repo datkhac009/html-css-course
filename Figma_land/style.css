@@ -654,7 +654,7 @@ input[type=text] {
     color: #252B42;
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:579px) {
     .header__nav {
         margin-top: 10%;
     }
