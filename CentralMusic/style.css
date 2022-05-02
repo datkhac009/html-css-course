@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FCFCFC;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* header */
+
+.header {
+    background-image: url(../CentralMusic/img/header__banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 944px;
+    background-position: bottom;
+    position: relative;
+}
+
+
+/* header__nav */
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2.5%;
+}
+
+
+/* header__nav__logo */
+
+.header__nav__logo {
+    display: flex;
+    margin-right: 4%;
+}
+
+.header__nav__logo h3,
+.header__nav__logo i {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.header__nav__logo #Music {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+/* header__nav__menu */
+
+.header__nav__menu {
+    display: flex;
+    margin-right: 29%;
+}
+
+.header__nav__menu li {
+    margin: 0px 40px;
+}
+
+.header__nav__menu li a {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FCFCFC;
+}
+
+
+/* header__nav__user */
+
+.header__nav__user {
+    display: flex;
+}
+
+.header__nav__user i {
+    margin: 0 8px;
+    font-size: 26px;
+}
+
+
+/* header__title */
+
+.header__title {
+    margin-top: 10%;
+}
+
+.header__title p {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-left: 5%;
+}
+
+
+/* header__callout */
+
+.header__callout {
+    background: #AB0433;
+    text-align: center;
+    padding: 50px 200px 60px 200px;
+    position: absolute;
+    bottom: -100px;
+    left: 22%;
+    box-shadow: 0px 2px 4px rgb(28 5 77 / 10%), 0px 12px 32px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+}
+
+.header__callout h3 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 200%;
+    color: #FFFFFF;
+}
+
+.header__callout p {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 149%;
+    color: #FFFFFF;
+}
+
+
+/* main */
+
+.main {
+    color: #252525;
+    margin-top: 200px;
+}
+
+.main h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    color: #505050;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.main h3::before,
+.main2__popularfinds h3::before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    width: 5.5%;
+    height: 3.5px;
+    background: #505050;
+    left: 47.5%;
+}
+
+
+/* .main2__popularfinds */
+
+.main2__popularfinds {
+    margin-top: 150px;
+    background: #ECECEC;
+    padding: 88px 0 88px 0px;
+}
+
+
+/* main__newproducts và main__popularfinds */
+
+.main__newproducts,
+.main__popularfinds {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* main__newproducts__item và main__popularfinds__item */
+
+.main__newproducts__item--img,
+.main__popularfinds__item--img {
+    background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 16px 24px 2px rgb(0 0 0 / 5%), 0px 6px 30px 5px rgb(0 0 0 / 5%), 0px 8px 10px -7px rgb(0 0 0 / 5%);
+}
+
+.main__newproducts__item--img img,
+.main__popularfinds__item--img img {
+    padding: 0 50px;
+}
+
+.main__newproducts__item--title,
+.main__popularfinds__item--title {
+    background: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 16px 24px 2px rgb(0 0 0 / 5%), 0px 6px 30px 5px rgb(0 0 0 / 5%), 0px 8px 10px -7px rgb(0 0 0 / 5%);
+    padding: 5%;
+}
+
+.main__newproducts__item--title p,
+.main__popularfinds__item--title p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #767676;
+}
+
+.main__newproducts__item--title #newproducts__item--chips,
+.main__popularfinds__item--title #popularfinds__item--chips {
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+    display: inline-block;
+    margin-top: 5%;
+    padding: 3px;
+}
+
+.main__newproducts__item--price,
+.main__popularfinds__item--price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #252525;
+}
+
+
+/* main_gearheads */
+
+.main_gearheads {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.main_gearheads h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    /* identical to box height, or 48px */
+    text-align: center;
+    /* #505050 */
+    color: #505050;
+}
+
+
+/* main_gearheads__content1 */
+
+.main_gearheads__content1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
+/*main_gearheads__content1--item  */
+
+.main_gearheads__content1--item {
+    background: #252525;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/* .main_gearheads__content1--item--title */
+
+.main_gearheads__content1--item--title,
+.main_gearheads__content2--item--title {
+    padding: 32px;
+}
+
+.main_gearheads__content1--item--title h4,
+.main_gearheads__content2--item--title h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.main_gearheads__content1--item--title p,
+.main_gearheads__content2--item--title p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #C4C4C4;
+}
+
+
+/* main_gearheads__content1--item2 */
+
+.main_gearheads__content1--item2 {
+    background: #EAEAEA;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/* .main_gearheads__content1--item2--title và main_gearheads__content2--item2--title */
+
+.main_gearheads__content1--item2--title,
+.main_gearheads__content2--item2--title {
+    padding: 32px;
+}
+
+.main_gearheads__content1--item2--title h4,
+.main_gearheads__content2--item2--title h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    color: #202020;
+}
+
+.main_gearheads__content1--item2--title p,
+.main_gearheads__content2--item2--title p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: #767676;
+}
+
+
+/* main_gearheads__content2 */
+
+.main_gearheads__content2 {
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
+/* main_gearheads__content2--item */
+
+.main_gearheads__content2--item {
+    background: #252525;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/* main_gearheads__content2--item2 */
+
+.main_gearheads__content2--item2 {
+    background: #EAEAEA;
+    border-radius: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width:639px) {
+    img {
+        width: 100%;
+    }
+    .header {
+        background-position-x: -700px;
+        height: 630px;
+        background-size: inherit;
+    }
+    .header__nav {
+        padding-top: 11%;
+    }
+    .header__nav__logo {
+        align-items: center;
+    }
+    .header__nav__logo h3,
+    .header__nav__logo i {
+        font-size: 36px;
+    }
+    .header__nav__logo #Music {
+        font-size: 36px;
+    }
+    .header__nav__menu {
+        display: none;
+    }
+    .header__title {
+        margin-top: 25%;
+    }
+    .header__title p {
+        font-size: 38px;
+        text-align: center;
+    }
+    .header__callout {
+        left: 7%;
+        right: 7%;
+        padding: 40px 98px;
+    }
+    .header__callout h3 {
+        font-size: 25px;
+        padding-left: 21%;
+        padding-right: 21%;
+        line-height: 140%;
+    }
+    .header__callout p {
+        font-size: 14px;
+    }
+    .main__newproducts,
+    .main__popularfinds {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__popularfinds__item,
+    .main__newproducts__item {
+        margin: 3% 0;
+    }
+    .main_gearheads__content1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .main_gearheads__content1--item {
+        margin-bottom: 5%;
+    }
+    .main_gearheads__content2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .main_gearheads__content2--item2 {
+        margin-bottom: 5%;
+    }
+    .main_gearheads__content2 #item--delete {
+        display: none;
+    }
+}
