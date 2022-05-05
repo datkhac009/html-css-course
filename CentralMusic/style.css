@@ -46,18 +46,22 @@ li {
 
 /* header__nav__logo */
 
-.header__nav__logo {
+.header__nav__logo,
+.footer__logo {
     display: flex;
     margin-right: 4%;
 }
 
 .header__nav__logo h3,
-.header__nav__logo i {
+.header__nav__logo i,
+.footer__logo h3,
+.footer__logo i {
     font-weight: 600;
     font-size: 40px;
 }
 
-.header__nav__logo #Music {
+.header__nav__logo #Music,
+.footer__logo #Music {
     font-weight: 400;
     font-size: 40px;
 }
@@ -362,6 +366,69 @@ li {
     border-radius: 10px 10px 10px 10px;
 }
 
+
+/* footer */
+
+.footer {
+    background: #505050;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+}
+
+
+/* footer__content */
+
+.footer__content {
+    display: flex;
+    line-height: 38px;
+    width: 100%;
+}
+
+.footer__content--title {
+    margin-right: 5%;
+}
+
+.footer__content--title h3 {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    /* or 18px */
+}
+
+.footer__content--title h3::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 56.5%;
+    height: 3.5px;
+    background: #FFFFFF;
+}
+
+.footer__content--title p {
+    font-weight: 400;
+    font-size: 14px;
+    /* or 18px */
+    /* White */
+    color: #FFFFFF;
+}
+
+
+/* footer__copyright"> */
+
+.footer__copyright {
+    background: #252525;
+}
+
+.footer__copyright p {
+    font-weight: 400;
+    font-size: 12.8px;
+    color: #FFFFFF;
+    line-height: 300%;
+    padding-left: 4%;
+}
+
 @media screen and (max-width:639px) {
     img {
         width: 100%;
@@ -432,6 +499,19 @@ li {
         margin-bottom: 5%;
     }
     .main_gearheads__content2 #item--delete {
+        display: none;
+    }
+    .footer,
+    .footer__copyright {
+        text-align: center;
+    }
+    .footer__content #footer__delete--title2 {
+        display: none;
+    }
+    .footer__content {
+        padding-left: 32%;
+    }
+    .footer__logo {
         display: none;
     }
 }
