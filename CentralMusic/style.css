@@ -74,10 +74,6 @@ li {
     margin-right: 29%;
 }
 
-.header__nav__menu li {
-    margin: 0px 40px;
-}
-
 .header__nav__menu li a {
     font-weight: 600;
     font-size: 18px;
@@ -514,4 +510,35 @@ li {
     .footer__logo {
         display: none;
     }
+}
+
+.header__nav__menu li {
+    padding: 20px 80px 20px 0;
+    position: relative;
+}
+
+.header__nav__menu li:hover ul {
+    top: 100%;
+    visibility: inherit;
+    opacity: 1;
+}
+
+.header__nav__menu li ul li {
+    padding: 8px 15px;
+}
+
+.header__nav__menu li ul li a {
+    color: #000;
+}
+
+.header__nav__menu li ul {
+    position: absolute;
+    background: #fff;
+    min-width: 180px;
+    left: 0;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
 }
