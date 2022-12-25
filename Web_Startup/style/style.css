@@ -127,7 +127,7 @@
 
 .header__logo__title--btn:hover,
 .main__partners--btn:hover,
-.main__partners__content__item--btn:hover {
+.main__partners__content__item--btn:hover,.main_member__btn:hover {
     background-color: rgb(111, 164, 164);
     transition: 0.5s;
     border-radius: 5px;
@@ -246,11 +246,61 @@
     line-height: 125%;
     color: #FFFFFF;
 }
+/* ****************Main_team********** */
+.main_team__text {
+    text-align: center;
+}
 
+.main_team__text h4 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: #74C69D;
+}
 
+.main_team__text h3 {
+    color: #000000;
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    margin: 16px 0;
+}
+
+.main_team__text p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #000000;
+}
+
+.main_list_member{
+    justify-content: space-between;
+    margin: 45px 132px;
+}
+.main_member img{
+    
+    border-radius: 5px;
+}
 /* ***********Reponsive******** */
-
-@media only screen and (min-width: 390px) {
+.main_member__btn{
+    display: inline-block;
+    background: #212529;
+    border-radius: 5px;
+    margin: 0 0% 0 45%;
+    padding: 13px 30px;
+}
+.main_member__btn a{
+text-decoration: none;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 468px) {
     .header__title {
         flex-direction: column-reverse;
     }
@@ -278,5 +328,13 @@
     }
     .main__partners__content__item__text h3 {
         font-size: 24px;
+    }
+    .main_list_member{
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    .main_member img{
+        width: 200px;
+        height: 250px;
     }
 }
