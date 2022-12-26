@@ -17,6 +17,7 @@ home.onmousemove = (e) =>{
    var y = (window.innerHeight / 2 - e.pageY) / 10;
    text_1.style.margin = `${y}px ${x}px`;
    text_2.style.margin = `${y}px ${x}px`;
+   
 }
 
 home.onmouseleave = () =>{

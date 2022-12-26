@@ -232,7 +232,7 @@ section{
 .gallery{
    background-color: var(--white);
 }
-
+span
 .gallery .box-container{
    display: grid;
    align-items: flex-start;
