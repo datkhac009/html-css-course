@@ -14,6 +14,7 @@
     background-color: #FFFFFF;
     font-family: 'Crimson Text', serif;
     font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
 }
 
 .header {
@@ -27,8 +28,17 @@
 
 .header__top {
     justify-content: space-between;
+    position: relative;
 }
-
+.header__top #menu--btn{
+    position: absolute;
+    right: -5%;
+    font-size: 35px;
+    cursor: pointer;
+    background: #333;
+    padding: 13px;
+    border-radius: 50%;
+}
 .header__logo {
     align-items: center;
 }
@@ -37,31 +47,34 @@
     width: 40px;
     height: 45px;
 }
-
-.header__menu__sub__ul {
+.header__menu__sub.active{
+ margin-top: 0;
+}
+.header__menu__sub{
+    margin-top: -6.8rem;
+    transition: .2s linear;
+}
+.header__menu__sub__ul{
     display: flex;
-    width: 100%;
-}
-
-.header__menu__sub__ul li {
-    margin-right: 30px;
-}
-
-.header__menu__sub ul li {
+    justify-content: space-between;
+    width: 555px;
     list-style: none;
+    
 }
-
-.header__menu__sub ul li a {
+.header__menu__sub__ul li a{
     font-family: 'Work Sans';
     text-decoration: none;
     position: relative;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 20px;
-    line-height: 125%;
+    line-height: 125%; 
 }
-
-.header__menu__sub ul li a::before {
+.header__menu__sub__ul li a:hover{
+    color: #d1d110;
+    transition: 0.5s;
+}
+.header__menu__sub__ul li a::before{
     content: "";
     position: absolute;
     background-color: #d1d110;
@@ -69,13 +82,7 @@
     height: 2px;
     bottom: -5px;
 }
-
-.header__menu__sub ul li a:hover {
-    color: #d1d110;
-    transition: 0.5s;
-}
-
-.header__menu__sub ul li a:hover::before {
+.header__menu__sub__ul li a:hover:before{
     width: 100%;
     transition: 0.5s;
 }
@@ -328,8 +335,17 @@ color: #FFFFFF;
     .header__title__img img {
         width: 360px;
     }
-    .header__menu__sub {
-        display: none;
+    .header__menu__sub__ul {
+        flex-direction: column;
+        margin-top: -9rem;
+        gap: 16px;
+        background: #656565;
+        width: auto;
+        margin-right: 4rem;
+        padding: 35px;
+    }
+    .header__menu__sub.active {
+        margin-top: 5rem;
     }
     .main__partners__link {
         flex-direction: column-reverse;

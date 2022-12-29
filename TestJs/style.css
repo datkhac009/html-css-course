@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+.header{
+    background-color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: -6.8rem;
+    transition: .2s linear;
+}
+.header.active{
+    margin-top: 0;
+}
+.header .nav {
+    display: flex;
+}
+.header .nav a{
+    flex:1;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 15px;
+}
+.main{
+    margin-top: 15%;
+}
+.main #menu-btn{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
