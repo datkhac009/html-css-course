@@ -116,25 +116,52 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
-.header__logo__title--btn {
-    margin-top: 25px;
-    padding: 13px 47px;
-    background: #FFFFFF;
-    border-radius: 5px;
-    display: inline-block;
-}
-
 .header__logo__title--btn a {
     font-weight: 400;
     font-size: 20px;
     line-height: 125%;
-    color: #000000;
-    text-decoration: none
+    color: #fff;
+    text-decoration: none;
+    
 }
 
-.header__logo__title--btn:hover,
+
+.header__logo__title--btn {
+   margin-top: 1em;
+    z-index: 1;
+    position: relative;
+    color: #ff3e00;
+    padding: 8px 16px;
+    outline: none;
+    background: #212529;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+}
+.header__logo__title--btn::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #ff3e00;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+.header__logo__title--btn:hover{
+    cursor: pointer;
+
+}
+.header__logo__title--btn:hover::before{
+    transform-origin:  left;
+    transform: scaleY(1);
+    
+}
+
+
+/* .header__logo__title--btn:hover, */
 .main__partners--btn:hover,
-.main__partners__content__item--btn:hover,.main_member__btn:hover {
+.main__partners__content__item--btn:hover,.main_member__btn:hover,.main__portfolio--btn:hover {
     background-color: rgb(111, 164, 164);
     transition: 0.5s;
     border-radius: 5px;
@@ -294,6 +321,8 @@
     
     border-radius: 5px;
 }
+
+
 /* ***********Reponsive******** */
 .main_member__btn{
     display: inline-block;
@@ -328,6 +357,63 @@ font-size: 20px;
 line-height: 125%;
 color: #FFFFFF;
 }
+/* *************Trang 2 protfofio*********** */
+
+.main__portfolio__text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main__portfolio__text h4 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: #74C69D;
+}
+
+.main__portfolio__text h3 {
+    color: #000000;
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    margin: 16px 0;
+}
+
+.main__portfolio__text p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #000000;
+}
+.main_project{
+    display: flex;
+    justify-content: space-between;
+    margin: 4.5em 11em;
+}
+.main_content .main_project img{
+    width: 570px;
+    height: 347px;
+    cursor: pointer;
+}
+.main__portfolio--btn {
+    display: inline-block;
+    background: #212529;
+    border-radius: 5px;
+    padding: 13px 30px;
+    margin: 0 0% 6em 45%;
+}
+
+.main__portfolio--btn a {
+    text-decoration: none;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
 @media only screen and (max-width: 390px) {
     .header__title {
         flex-direction: column-reverse;
@@ -339,10 +425,16 @@ color: #FFFFFF;
         flex-direction: column;
         margin-top: -9rem;
         gap: 16px;
-        background: #656565;
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(232,226,226,1) 0%, rgba(218,208,208,1) 100%);
         width: auto;
         margin-right: 4rem;
         padding: 35px;
+        opacity: 0.5;
+        border-radius: 50% 50%;
+        align-items: center;
+    }
+    .header__menu__sub__ul:hover{
+        opacity: 1;
     }
     .header__menu__sub.active {
         margin-top: 5rem;
