@@ -5,7 +5,11 @@
     padding: 0;
     margin: 0;
 }
-
+:root{
+    --black:#212529;
+    --color-hidden:rgba(33, 37, 41, 0.5);
+    --green:#74C69D;
+}
 .flex {
     display: flex;
 }
@@ -161,7 +165,7 @@
 
 /* .header__logo__title--btn:hover, */
 .main__partners--btn:hover,
-.main__partners__content__item--btn:hover,.main_member__btn:hover,.main__portfolio--btn:hover {
+.main__partners__content__item--btn:hover,.main_member__btn:hover,.main__portfolio--btn:hover,.services__price--btn:hover {
     background-color: rgb(111, 164, 164);
     transition: 0.5s;
     border-radius: 5px;
@@ -185,6 +189,7 @@
     font-size: 16px;
     line-height: 125%;
     color: #74C69D;
+    text-transform: uppercase;
 }
 
 .main__partners__text h3 {
@@ -294,6 +299,7 @@
     font-size: 16px;
     line-height: 125%;
     color: #74C69D;
+    text-transform: uppercase;
 }
 
 .main_team__text h3 {
@@ -322,8 +328,8 @@
     border-radius: 5px;
 }
 
+h4
 
-/* ***********Reponsive******** */
 .main_member__btn{
     display: inline-block;
     background: #212529;
@@ -370,6 +376,7 @@ color: #FFFFFF;
     font-size: 16px;
     line-height: 125%;
     color: #74C69D;
+    text-transform: uppercase;
 }
 
 .main__portfolio__text h3 {
@@ -414,6 +421,113 @@ color: #FFFFFF;
     line-height: 125%;
     color: #FFFFFF;
 }
+
+
+/* *************Trang 3 Our Services***************** */
+.main__services__text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main__services__text h4 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: #74C69D;
+    text-transform: uppercase;
+}
+
+.main__services__text h3 {
+    color: #000000;
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    margin: 16px 0;
+}
+
+.main__services__text p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #000000;
+}
+.main__services__price{
+    display: flex;
+    justify-content: space-between;
+    margin: 6.5em 9.5em;
+}
+.services__price{
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 46px 30px;
+}
+.services__price h5{
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+    color: #000000;
+}
+.services__price p {
+    /* margin: 0.6em 0px; */
+    margin-bottom: 0.6em;
+}
+.services__price span{
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #000000;
+}
+.services__price p {
+    color: var(--color-hidden);
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+}
+.services__check{
+    padding-top: 1.2em;
+    padding-bottom: 0.8em;
+    text-align: start;
+}
+.services__check p{
+    color: var(--black);
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+}
+.services__check p i{
+    color: var(--green);
+    padding-right: 0.5em;
+}
+.services__price--btn{
+    display: inline-block;
+    background: #212529;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 2em;
+   
+}
+.services__price--btn a{
+    text-decoration: none;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+/* ***********Reponsive******** */
+
+
+
+
 @media only screen and (max-width: 390px) {
     .header__title {
         flex-direction: column-reverse;
@@ -432,9 +546,11 @@ color: #FFFFFF;
         opacity: 0.5;
         border-radius: 50% 50%;
         align-items: center;
+      
     }
     .header__menu__sub__ul:hover{
         opacity: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
     .header__menu__sub.active {
         margin-top: 5rem;
@@ -452,7 +568,7 @@ color: #FFFFFF;
     .main__partners__content__item:nth-child(2) {
         flex-direction: column-reverse;
     }
-    .main__partners__content__item__img img {
+    .main__partners__content__item__img img{
         width: 360px;
     }
     .main__partners__content__item__text h3 {
@@ -476,5 +592,25 @@ color: #FFFFFF;
         row-gap: 15px;
         text-align: center;
       
+    }
+    .main_project{
+        flex-direction: column;
+        margin: 0 33px;
+    }
+    .main_content .main_project img{
+        width: 320px;   
+        max-height: 250px;
+        object-fit: contain;
+    }
+    .main__portfolio--btn{
+        margin: 0 0% 6em 7em;
+    }
+    /* *************Trang 3 Our Services***************** */
+    .main__services__price{
+        flex-direction: column;
+        margin: 1.8em 1em;
+    }
+    .services__price{
+        margin: 3em 0px;
     }
 }
