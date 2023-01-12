@@ -534,9 +534,10 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    min-width: 557px;
 }
 .form_contact input{
-    min-width: 557px;
+    width: 100%;
     background: #EEEEEE;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -681,4 +682,23 @@ color: #FFFFFF;
     .services__price{
         margin: 3em 0px;
     }
+    /* *************Trang 4 Contact******************* */
+    .main__form{
+        flex-direction: column-reverse;
+        margin: 0 0 68px 0;
+    } 
+    .main__contact__text{
+        margin-bottom: 45px;
+    }
+    .main__map iframe{
+        width: 335px;
+        height: 224px;
+        margin: 0 20px;
+    }
+    .form_contact{
+        min-width: 320px;
+        margin: 0 20px;
+    }
+    
+    
 }
